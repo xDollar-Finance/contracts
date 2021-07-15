@@ -34,11 +34,11 @@ const RPC_APIKEY=process.env.RPC_APIKEY;
 if(PRIVATE_KEY !== undefined && RPC_APIKEY !== undefined) {
   module.exports.networks = {
     goerli: {
-        url: `https://rpc.slock.it/goerli`,
+        url: `https://goerli.infura.io/v3/${RPC_APIKEY}`,
         accounts: [`0x${PRIVATE_KEY}`]
     },
     mumbai: {
-      url: `https://rpc-mumbai.maticvigil.com/v1/${RPC_APIKEY}`,
+      url: `https://polygon-mumbai.infura.io/v3/${RPC_APIKEY}`,
       accounts: [`0x${PRIVATE_KEY}`]
     }
   };
