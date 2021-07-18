@@ -5,7 +5,7 @@ async function main() {
     const [deployer] = await hre.ethers.getSigners();
 
     const rootTunnel = new hre.ethers.Contract("0xd5aB7DbE5C848d047715a5d52e323434D225D62c", rootTunnelJson["abi"], deployer);
-    await rootTunnel.setFxChildTunnel("0x3De9292964A32D8DcEd58A2a024Dec2EC4F1cfB9");
+    await rootTunnel.withdraw("0xA7e9b72783157bf9d9DDA84d2af6C77E9c21ED9E", hre.ethers.utils.parseEther("0.5"));
   }
   
   main()
