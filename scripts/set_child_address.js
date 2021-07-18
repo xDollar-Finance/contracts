@@ -4,8 +4,8 @@ const childTunnelJson = require("../artifacts/contracts/examples/erc20-reverse-t
 async function main() {
     const [deployer] = await hre.ethers.getSigners();
 
-    const childTunnel = new hre.ethers.Contract("0x3De9292964A32D8DcEd58A2a024Dec2EC4F1cfB9", childTunnelJson["abi"], deployer);
-    await childTunnel.setFxRootTunnel("0xd5aB7DbE5C848d047715a5d52e323434D225D62c");
+    const childTunnel = new hre.ethers.Contract("0xE013dD357671dE5C698cF48E5483fB339b1229b4", childTunnelJson["abi"], deployer);
+    await childTunnel.setFxRootTunnel("0x7b5C335e29607334f7Decc7c668A8fb0C6b49c47");
   }
   
   main()

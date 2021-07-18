@@ -9,7 +9,7 @@ async function main() {
     // console.log("FxERC20 deployed to:", fxERC20Token.address);
 
 
-    const templateTokenAddress = "0x09d46E62321087Cb41FAC27e54FC69EA57b98BD9";
+    const templateTokenAddress = "0x41D33972fD40e1222B7025374C701CEDDA0Ed28f";
     const checkpointManagerAddress = "0x86E4Dc95c7FBdBf52e33D563BbDB00823894C287";
     const fxRootAddress = "0xfe5e5D361b2ad62c541bAb87C45a0B9B018389a2";
 
