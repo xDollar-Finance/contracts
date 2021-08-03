@@ -9,9 +9,9 @@ async function main() {
     // console.log("FxERC20 deployed to:", fxERC20Token.address);
 
 
-    const templateTokenAddress = "0x41D33972fD40e1222B7025374C701CEDDA0Ed28f";
-    const checkpointManagerAddress = "0x86E4Dc95c7FBdBf52e33D563BbDB00823894C287";
-    const fxRootAddress = "0xfe5e5D361b2ad62c541bAb87C45a0B9B018389a2";
+    const templateTokenAddress = "0xeeC6960028b9c48FA42d91EFF7d1433BDffda0B7";
+    const checkpointManagerAddress = "0x2890bA17EfE978480615e330ecB65333b880928e";
+    const fxRootAddress = "0x3d1d3E34f7fB6D26245E6640E1c50710eFFf15bA";
 
     // const RootTunnel = await hre.ethers.getContractFactory("FxReserveERC20RootTunnel", deployer);
     // const rootTunnel = await RootTunnel.deploy(checkpointManagerAddress, fxRootAddress, "0x049190C42BD4C35cEFFb7503eCFFDB90A74316fF");

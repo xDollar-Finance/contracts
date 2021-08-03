@@ -8,9 +8,8 @@ async function main() {
 
     // console.log("FxERC20 deployed to:", fxERC20Token.address);
 
-    const fxERC20TokenAddress = "0x41D33972fD40e1222B7025374C701CEDDA0Ed28f";
-
-    const fxChildAddress = "0x8397259c983751DAf40400790063935a11afa28a";
+    const fxERC20TokenAddress = "0xeeC6960028b9c48FA42d91EFF7d1433BDffda0B7";
+    const fxChildAddress = "0xCf73231F28B7331BBe3124B907840A94851f9f11";
 
     // const ChildTunnel = await hre.ethers.getContractFactory("FxReverseERC20ChildTunnel", deployer);
     // const childTunnel = await ChildTunnel.deploy(fxChildAddress, "0xf937cF3022B73816DaBD779Ea03Cd74C9e21c634");
