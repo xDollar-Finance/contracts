@@ -22,23 +22,37 @@ module.exports = {
   solidity: {
     compilers: [
       {
-        version: "0.7.3"
+        version: "0.7.3",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200
+          }
+        }
       }
     ]
   }
 };
 
-const PRIVATE_KEY=process.env.PRIVATE_KEY;
-const RPC_APIKEY=process.env.RPC_APIKEY;
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const RPC_APIKEY = process.env.RPC_APIKEY;
 
-if(PRIVATE_KEY !== undefined && RPC_APIKEY !== undefined) {
+if (PRIVATE_KEY !== undefined && RPC_APIKEY !== undefined) {
   module.exports.networks = {
     goerli: {
-        url: `https://rpc.slock.it/goerli`,
-        accounts: [`0x${PRIVATE_KEY}`]
+      url: `https://goerli.infura.io/v3/${RPC_APIKEY}`,
+      accounts: [`0x${PRIVATE_KEY}`]
     },
     mumbai: {
-      url: `https://rpc-mumbai.maticvigil.com/v1/${RPC_APIKEY}`,
+      url: `https://polygon-mumbai.infura.io/v3/${RPC_APIKEY}`,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    matic: {
+      url: `https://polygon-mainnet.infura.io/v3/${RPC_APIKEY}`,
+      accounts: [`0x${PRIVATE_KEY}`]
+    },
+    mainnet: {
+      url: `https://mainnet.infura.io/v3/${RPC_APIKEY}`,
       accounts: [`0x${PRIVATE_KEY}`]
     }
   };
